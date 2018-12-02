@@ -1,0 +1,40 @@
+{
+	"name": "new-github-release-url",
+	"version": "0.0.0",
+	"description": "Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields",
+	"license": "MIT",
+	"repository": "sindresorhus/new-github-release-url",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"start": "node example.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"github",
+		"release",
+		"releases",
+		"new",
+		"generate",
+		"url",
+		"gh",
+		"query",
+		"search",
+		"parameters",
+		"params"
+	],
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"opn": "^5.4.0",
+		"xo": "^0.23.0"
+	}
+}

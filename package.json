@@ -13,11 +13,12 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava",
+		"test": "xo && ava && tsd",
 		"start": "node example.js"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"github",
@@ -32,9 +33,13 @@
 		"parameters",
 		"params"
 	],
+	"dependencies": {
+		"type-fest": "^0.4.1"
+	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"opn": "^5.4.0",
-		"xo": "^0.23.0"
+		"ava": "^1.4.1",
+		"open": "^6.1.0",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
 	}
 }

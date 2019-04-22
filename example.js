@@ -1,5 +1,5 @@
 'use strict';
-const opn = require('opn');
+const open = require('open');
 const newGithubReleaseUrl = require('.');
 
 const url = newGithubReleaseUrl({
@@ -13,4 +13,4 @@ const url = newGithubReleaseUrl({
 	isPrerelease: true
 });
 
-opn(url, {wait: false});
+open(url);

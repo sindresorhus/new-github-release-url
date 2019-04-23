@@ -8,7 +8,9 @@ declare namespace newGithubReleaseUrl {
 		readonly tag?: string;
 
 		/**
-		The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist. Default: The default branch.
+		The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist.
+
+		Default: The default branch.
 		*/
 		readonly target?: string;
 

@@ -16,7 +16,7 @@ $ npm install new-github-release-url
 
 ```js
 const newGithubReleaseUrl = require('new-github-release-url');
-const opn = require('opn');
+const open = require('open');
 
 const url = newGithubReleaseUrl({
 	user: 'sindresorhus',
@@ -26,7 +26,7 @@ const url = newGithubReleaseUrl({
 //=> 'https://github.com/sindresorhus/new-github-release-url/releases/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
 
 // Then open it
-opn(url);
+open(url);
 ```
 
 
@@ -38,7 +38,7 @@ Returns a URL string.
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 You are required to either specify the `repoUrl` option or both the `user` and `repo` options.
 

@@ -1,4 +1,4 @@
-# new-github-release-url [![Build Status](https://travis-ci.com/sindresorhus/new-github-release-url.svg?branch=master)](https://travis-ci.com/sindresorhus/new-github-release-url)
+# new-github-release-url
 
 > Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields
 

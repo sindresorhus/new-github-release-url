@@ -7,7 +7,7 @@ const url = newGithubReleaseUrl({
 	user: 'sindresorhus',
 	repo: 'new-github-release-url',
 	tag: 'v9.9.9',
-	target: 'master',
+	target: 'main',
 	title: 'Cookies',
 	body: 'Nom nom nom nom...',
 	isPrerelease: true

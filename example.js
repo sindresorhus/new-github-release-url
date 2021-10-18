@@ -1,6 +1,5 @@
-'use strict';
-const open = require('open');
-const newGithubReleaseUrl = require('.');
+import open from 'open';
+import newGithubReleaseUrl from './index.js';
 
 const url = newGithubReleaseUrl({
 	// Change these to your own repo for testing
@@ -10,7 +9,7 @@ const url = newGithubReleaseUrl({
 	target: 'main',
 	title: 'Cookies',
 	body: 'Nom nom nom nom...',
-	isPrerelease: true
+	isPrerelease: true,
 });
 
 open(url);

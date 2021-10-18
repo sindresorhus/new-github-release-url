@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (options = {}) => {
+export default function newGithubReleaseUrl(options = {}) {
 	let repoUrl;
 	if (options.repoUrl) {
 		repoUrl = options.repoUrl;
@@ -17,7 +15,7 @@ module.exports = (options = {}) => {
 		'target',
 		'title',
 		'body',
-		'isPrerelease'
+		'isPrerelease',
 	];
 
 	for (let type of types) {
@@ -34,4 +32,4 @@ module.exports = (options = {}) => {
 	}
 
 	return url.toString();
-};
+}

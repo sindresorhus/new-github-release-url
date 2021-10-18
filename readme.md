@@ -4,19 +4,17 @@
 
 GitHub supports prefilling a new release by setting [certain search parameters](https://github.com/isaacs/github/issues/1410#issuecomment-442240267). This package simplifies generating such URL.
 
-
 ## Install
 
-```
+```sh
 $ npm install new-github-release-url
 ```
-
 
 ## Usage
 
 ```js
-const newGithubReleaseUrl = require('new-github-release-url');
-const open = require('open');
+import newGithubReleaseUrl from 'new-github-release-url';
+import open from 'open';
 
 const url = newGithubReleaseUrl({
 	user: 'sindresorhus',
@@ -26,9 +24,8 @@ const url = newGithubReleaseUrl({
 //=> 'https://github.com/sindresorhus/new-github-release-url/releases/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
 
 // Then open it
-open(url);
+await open(url);
 ```
-
 
 ## API
 
@@ -68,7 +65,7 @@ The tag name of the release.
 
 ##### target
 
-Type: `string`<br>
+Type: `string`\
 Default: The default branch
 
 The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist.
@@ -89,17 +86,11 @@ The description text of the release.
 
 ##### isPrerelease
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Whether the release should be marked as a pre-release.
 
-
 ## Related
 
 - [new-github-issue-url](https://github.com/sindresorhus/new-github-issue-url) - Generate a URL for opening a new GitHub issue with prefilled title, body, and other fields
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
